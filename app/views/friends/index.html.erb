@@ -5,19 +5,19 @@
 <table class="table" id="friends">
 <thead>
 <tr>
-  <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Email</th>
-      <th scope="col">Phone</th>
+ 
+      <th>First</th>
+      <th>Last</th>
+      <th>Email</th>
+      <th>Phone</th>
 
 </tr>
+ </thead>
+
   <% @friends.each do |friend| %>
-    <%= render friend %>
-    <p>
-      <%= link_to "Show this friend", friend %>
-    </p>
+    <%= render friend %>  
   <% end %>
-</div>
+
+</table>
 
 <%= link_to "New friend", new_friend_path %>
